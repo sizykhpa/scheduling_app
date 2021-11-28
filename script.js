@@ -1,7 +1,5 @@
 const daySection = document.querySelectorAll(".schedule_section")
 
-let ratio = 0.35
-
 let allAppnt = {
 	monday: ["10:00 jhjkhgfggggfgfghfghfghfgh fghfghfghghfgfghfghfghfgfghfghfghfgfghfhgf", "11:00 fabfb", "12:00 rhekjrhu", "10:00 jhjkh", "11:00 fabfb", "12:00 rhekjrhu", "12:00 rhekjrhu"],
 	tuesday: ["09:00 ooo", "09:30 yy", "12:30 oopp"],
@@ -37,7 +35,7 @@ function setSize() {
   
   //Set height of the result fields
   for (let section of scheduleSection) {
-    section.style.height = `${(window.innerHeight - sum - 23) * ratio}px`
+    section.style.height = `${((window.innerHeight - sum / 2) / 3 - 23)}px`
 		section.style.width = `${(window.innerWidth - 24) / 2}px`
   }
 	document.querySelector("#top_line").style.width = `${window.innerWidth - 20 }px`
